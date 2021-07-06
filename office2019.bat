@@ -2,18 +2,18 @@
 (cd /d "%~dp0")&&(NET FILE||(powershell start-process -FilePath '%0' -verb runas)&&(exit /B)) >NUL 2>&1
 title Office 2019 Activator 
 echo Converting... & mode 60,25
-echo ÕýÔÚÁ¬½Ó¼¤»î·þÎñÆ÷ ÇëÉÔµÈ£¬Õâ¿ÉÄÜÐèÒª30s..
+echo æ­£åœ¨è¿žæŽ¥æ¿€æ´»æœåŠ¡å™¨ è¯·ç¨ç­‰ï¼Œè¿™å¯èƒ½éœ€è¦30s..
 (if exist "%ProgramFiles%\Microsoft Office\Office16\ospp.vbs" cd /d "%ProgramFiles%\Microsoft Office\Office16")&(if exist "%ProgramFiles(x86)%\Microsoft Office\Office16\ospp.vbs" cd /d "%ProgramFiles(x86)%\Microsoft Office\Office16")&(for /f %%x in ('dir /b ..\root\Licenses16\ProPlus2019VL*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%%x" >nul)&(for /f %%x in ('dir /b ..\root\Licenses16\ProPlus2019VL*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%%x" >nul)
 cscript //nologo ospp.vbs /unpkey:6MWKP >nul&cscript //nologo ospp.vbs /inpkey:NMMKJ-6RK4F-KMJVX-8D9MJ-6MWKP >nul&set i=1
 :server
-if %i%==1 set KMS_Sev=kms.biubixin.com
-if %i%==2 set KMS_Sev=kms.biubixin.com
-if %i%==3 set KMS_Sev=kms.biubixin.com
+if %i%==1 set KMS_Sev=kms.cnhyk.com
+if %i%==2 set KMS_Sev=kms.cnhyk.com
+if %i%==3 set KMS_Sev=kms.cnhyk.com
 cscript //nologo ospp.vbs /sethst:%KMS_Sev% >nul
-echo %KMS_Sev% & echo ÕýÔÚ¼¤»îÖÐ ÇëÉÔºó...
+echo %KMS_Sev% & echo æ­£åœ¨æ¿€æ´»ä¸­ è¯·ç¨åŽ...
 cscript //nologo ospp.vbs /act | find /i "successful" && (echo Complete) || (echo Trying another KMS Server & set /a i+=1 & goto server)
-echo ¼¤»î³É¹¦£¡¿ÉÒÔÍË³öÁË£¬°¢°Í°¢°Í°¢°ÍQAQ
-echo ¸ÐÐ»¶ÔÐ¡º­µÄÖ§³Ö  @_@
-echo ÎÒµÄÐ¡ÎÝ£ºbiubixin.com
+echo æ¿€æ´»æˆåŠŸï¼å¯ä»¥é€€å‡ºäº†ï¼Œé˜¿å·´é˜¿å·´é˜¿å·´QAQ
+echo æ„Ÿè°¢å¯¹å°æ¶µçš„æ”¯æŒ  @_@
+echo æˆ‘çš„å°å±‹ï¼škms.cnhyk.com
 pause >nul
 exit
