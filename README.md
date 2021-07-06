@@ -71,7 +71,7 @@ cscript ospp.vbs /act
 
 ##### win10专业版
 ```nginx
-slmgr /skms kms.biubixin.com
+slmgr /skms kms.cnhyk.com
 slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
 slmgr /ato
 slmgr /xpr
